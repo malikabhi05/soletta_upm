@@ -1,0 +1,11 @@
+
+struct _upm_generic_analog;
+
+struct _upm_generic_analog*
+upm_genericanalog_open(const char* pin, int mask);
+
+void
+upm_genericanalog_close(struct _upm_generic_analog *internal_in);
+
+struct sol_aio_pending *
+upm_genericanalog_read(struct _upm_generic_analog *internal_in);
