@@ -1,4 +1,0 @@
-config FLOW_NODE_TYPE_GENERICANALOG
-	tristate "Node type: genericanalog"
-	depends on USE_AIO
-	default m
